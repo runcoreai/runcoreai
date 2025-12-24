@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RunCore AI | AI Agents for Business Operations</title>
+    <!-- Tailwind CSS for rapid, production-grade styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font - Bold & Clean -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-orange: #f97316;
+            --brand-blue: #0ea5e9;
+            --dark-bg: #ffffff;
+            --infra-border: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #0f172a;
+            background-color: #fafafa;
+            scroll-behavior: smooth;
+        }
+
+        /* Infrastructure-style Grid Background */
+        .infra-grid {
+            background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+
+        .btn-primary {
+            background-color: var(--brand-orange);
+            transition: all 0.2s ease;
+        }
+        .btn-primary:hover {
+            filter: brightness(110%);
+            transform: translateY(-1px);
+        }
+
+        .infra-card {
+            background: white;
+            border: 1px solid var(--infra-border);
+            transition: border-color 0.2s ease;
+        }
+        .infra-card:hover {
+            border-color: var(--brand-blue);
+        }
+
+        .nav-link {
+            color: #64748b;
+            font-weight: 600;
+            transition: color 0.2s ease;
+        }
+        .nav-link:hover {
+            color: var(--brand-blue);
+        }
+
+        /* Responsive spacing for mobile */
+        @media (max-width: 640px) {
+            .section-padding { padding-top: 4rem; padding-bottom: 4rem; }
+        }
+    </style>
+</head>
+<body class="infra-grid">
+
+    <!-- NAVIGATION -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-8">
+                <a href="#" class="text-xl font-bold tracking-tight flex items-center">
+                    <span class="text-orange-500">Run</span>Core <span class="ml-1 px-1.5 py-0.5 rounded text-[10px] bg-slate-100 border border-slate-200 text-slate-500 uppercase tracking-widest">AI</span>
+                </a>
+                <div class="hidden md:flex gap-6">
+                    <a href="#what-we-do" class="nav-link text-sm">What We Do</a>
+                    <a href="#how-it-works" class="nav-link text-sm">How It Works</a>
+                    <a href="#pricing" class="nav-link text-sm">Pricing</a>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#demo" class="hidden sm:block text-sm font-bold text-slate-900 px-4 py-2 hover:bg-slate-50 rounded-lg transition">Log in</a>
+                <a href="#demo" class="btn-primary text-white text-sm font-bold px-5 py-2 rounded-lg shadow-sm shadow-orange-200">Book a Demo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="pt-20 pb-24 md:pt-32 md:pb-40 border-b border-slate-200 bg-white">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-8 text-slate-900">
+                AI Agents that <span class="text-orange-500">Automate</span> <br class="hidden md:block"> Your Business Operations
+            </h1>
+            <p class="text-xl text-slate-500 max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
+                Never miss enquiries again. RunCore AI handles calls, bookings, and confirmations automatically so you can focus on your work.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#demo" class="w-full sm:w-auto px-8 py-4 btn-primary text-white font-bold rounded-xl text-lg text-center">
+                    Book a Free Demo
+                </a>
+                <a href="https://wa.me/yournumber" target="_blank" class="w-full sm:w-auto px-8 py-4 border border-slate-200 bg-white text-slate-900 font-bold rounded-xl text-lg hover:bg-slate-50 transition flex items-center justify-center gap-2">
+                    <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                    WhatsApp Us
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- PROBLEM & AUDIENCE SECTION -->
+    <section class="py-24 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl font-extrabold text-slate-900 mb-6 tracking-tight">The true cost of a missed call.</h2>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        For local businesses, a missed call isn't just a notification—it's a lost job. When you're on a project or with a client, you can't always answer. 
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 font-semibold text-slate-700">
+                            <span class="w-6 h-6 rounded-full bg-red-100 text-red-600 flex items-center justify-center text-xs">✕</span>
+                            Potential clients call your competitor instead.
+                        </div>
+                        <div class="flex items-center gap-3 font-semibold text-slate-700">
+                            <span class="w-6 h-6 rounded-full bg-red-100 text-red-600 flex items-center justify-center text-xs">✕</span>
+                            Your evening is spent returning calls manually.
+                        </div>
+                    </div>
+                </div>
+                <div class="infra-card rounded-2xl p-8">
+                    <h3 class="text-sm font-bold uppercase tracking-widest text-blue-500 mb-6">Designed For</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-4 border border-slate-100 rounded-xl bg-slate-50 font-bold text-slate-800">Interior Designers</div>
+                        <div class="p-4 border border-slate-100 rounded-xl bg-slate-50 font-bold text-slate-800">Medical Clinics</div>
+                        <div class="p-4 border border-slate-100 rounded-xl bg-slate-50 font-bold text-slate-800">Real Estate</div>
+                        <div class="p-4 border border-slate-100 rounded-xl bg-slate-50 font-bold text-slate-800">Home Services</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT WE DO SECTION -->
+    <section id="what-we-do" class="py-24 bg-white border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-slate-900 tracking-tight">Simple. Reliable. Intelligent.</h2>
+                <p class="text-slate-500 font-medium mt-4">We replace manual tasks with 24/7 digital infrastructure.</p>
+            </div>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="infra-card p-6 rounded-xl">
+                    <div class="text-orange-500 font-black mb-4">01</div>
+                    <h4 class="font-bold text-slate-900 mb-2">Answers Calls</h4>
+                    <p class="text-sm text-slate-500">The AI handles incoming calls instantly with a professional voice.</p>
+                </div>
+                <div class="infra-card p-6 rounded-xl">
+                    <div class="text-orange-500 font-black mb-4">02</div>
+                    <h4 class="font-bold text-slate-900 mb-2">Books Appointments</h4>
+                    <p class="text-sm text-slate-500">It checks your calendar and schedules meetings automatically.</p>
+                </div>
+                <div class="infra-card p-6 rounded-xl">
+                    <div class="text-orange-500 font-black mb-4">03</div>
+                    <h4 class="font-bold text-slate-900 mb-2">Sends Confirmations</h4>
+                    <p class="text-sm text-slate-500">Both you and the client receive immediate WhatsApp/SMS alerts.</p>
+                </div>
+                <div class="infra-card p-6 rounded-xl">
+                    <div class="text-orange-500 font-black mb-4">04</div>
+                    <h4 class="font-bold text-slate-900 mb-2">Existing Numbers</h4>
+                    <p class="text-sm text-slate-500">No need to change your number. We integrate with your current phone system.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS SECTION -->
+    <section id="how-it-works" class="py-24 bg-slate-50 border-b border-slate-200 overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-extrabold text-slate-900 mb-16 text-center tracking-tight">The 3-Step Setup</h2>
+            <div class="relative flex flex-col md:flex-row gap-8">
+                <div class="flex-1 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 rounded-full bg-white border-4 border-orange-500 flex items-center justify-center text-xl font-bold text-slate-900 z-10 mb-6">1</div>
+                    <h4 class="font-bold text-lg mb-2">Connect Your Number</h4>
+                    <p class="text-slate-500">We link our AI assistant to your existing business line.</p>
+                </div>
+                <div class="hidden md:block absolute top-8 left-1/4 right-1/4 h-0.5 bg-slate-200"></div>
+                <div class="flex-1 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 rounded-full bg-white border-4 border-orange-500 flex items-center justify-center text-xl font-bold text-slate-900 z-10 mb-6">2</div>
+                    <h4 class="font-bold text-lg mb-2">AI Handles Operations</h4>
+                    <p class="text-slate-500">The agent takes calls and manages bookings 24/7 without a break.</p>
+                </div>
+                <div class="flex-1 flex flex-col items-center text-center">
+                    <div class="w-16 h-16 rounded-full bg-white border-4 border-orange-500 flex items-center justify-center text-xl font-bold text-slate-900 z-10 mb-6">3</div>
+                    <h4 class="font-bold text-lg mb-2">Get Confirmed Leads</h4>
+                    <p class="text-slate-500">Check your phone to see new appointments ready for you to work on.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section id="pricing" class="py-24 bg-white border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-slate-900 tracking-tight">Straightforward Pricing</h2>
+                <p class="text-slate-500 font-medium mt-4">No hidden jargon. No complex tiers.</p>
+            </div>
+            
+            <div class="max-w-lg mx-auto infra-card rounded-[2rem] overflow-hidden shadow-xl shadow-slate-100">
+                <div class="p-10 bg-slate-900 text-white">
+                    <div class="text-orange-500 font-bold uppercase tracking-widest text-xs mb-4">Standard Operational Plan</div>
+                    <div class="flex items-baseline gap-2">
+                        <span class="text-5xl font-extrabold">₹5,999</span>
+                        <span class="text-slate-400 font-medium">/ month</span>
+                    </div>
+                    <p class="text-slate-400 mt-4 text-sm font-medium">+ ₹4,999 One-time Setup Fee</p>
+                </div>
+                <div class="p-10 space-y-4">
+                    <div class="flex items-center gap-3 font-bold text-slate-700">
+                        <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        AI Call Assistant
+                    </div>
+                    <div class="flex items-center gap-3 font-bold text-slate-700">
+                        <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        Appointment Booking
+                    </div>
+                    <div class="flex items-center gap-3 font-bold text-slate-700">
+                        <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        Confirmations (WA/SMS)
+                    </div>
+                    <div class="flex items-center gap-3 font-bold text-slate-700">
+                        <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        Monitoring & Support
+                    </div>
+                    <div class="flex items-center gap-3 font-bold text-slate-700">
+                        <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        Up to 300 call minutes
+                    </div>
+                    <div class="pt-8">
+                        <a href="#demo" class="block w-full text-center py-4 btn-primary text-white font-black rounded-xl text-lg">
+                            Get Started Now
+                        </a>
+                        <p class="text-center text-xs text-slate-400 mt-4">Extra minutes billed separately. Cancel anytime.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOK A DEMO SECTION -->
+    <section id="demo" class="py-24 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-white border border-slate-200 p-8 md:p-16 rounded-[2rem] text-center shadow-lg">
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-6 tracking-tight">Let's see it in action.</h2>
+                <p class="text-slate-600 mb-10 text-lg">Schedule a quick demo to see how our AI voice agent handles a call for your specific business.</p>
+                
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <a href="#" class="px-8 py-4 bg-slate-900 text-white font-bold rounded-xl hover:bg-slate-800 transition">
+                        Select a Time (Calendly)
+                    </a>
+                    <a href="https://wa.me/yournumber" class="px-8 py-4 border border-slate-200 bg-white text-slate-900 font-bold rounded-xl hover:bg-slate-50 transition flex items-center justify-center gap-2">
+                        WhatsApp Us
+                    </a>
+                </div>
+                <p class="mt-6 text-sm text-slate-400">Available Mon-Fri, 9am - 6pm</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-16 bg-white border-t border-slate-200">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                <div>
+                    <a href="#" class="text-xl font-bold tracking-tight flex items-center mb-6">
+                        <span class="text-orange-500">Run</span>Core AI
+                    </a>
+                    <p class="text-slate-500 text-sm font-medium">High-reliability AI agents for local business operations. We build digital infrastructure so you can build your business.</p>
+                </div>
+                <div class="flex flex-col md:items-end gap-2 text-sm font-bold text-slate-900 uppercase tracking-widest">
+                    <p class="text-slate-400 normal-case mb-2 font-medium">Contact us:</p>
+                    <a href="mailto:hello@runcore.ai" class="hover:text-blue-500">hello@runcore.ai</a>
+                    <a href="tel:+9100000000" class="hover:text-blue-500">+91 (900) 000-0000</a>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between gap-4 text-xs font-bold text-slate-400 uppercase tracking-widest">
+                <div>© 2025 RunCore AI Systems</div>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-slate-900">Privacy</a>
+                    <a href="#" class="hover:text-slate-900">Terms</a>
+                    <a href="#" class="hover:text-slate-900">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
